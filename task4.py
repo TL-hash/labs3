@@ -14,13 +14,13 @@ if __name__ == '__main__':
         exit(1)
 
     a = 1 / math.factorial(n)
-    S, k = a, 0
+    s, k = a, 0
 
     while math.fabs(a) > EPS:
         a *= (x**2 / 4) / ((k + 1)*(k + 1 + n))
-        S += a
+        s += a
         k += 1
 
-    res = (x / 2) ** n * S
+    res = (x / 2) ** n * s
 
     print(f"I{n}({x}) = {res}")
