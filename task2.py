@@ -33,21 +33,21 @@ if __name__ == '__main__':
 
         if y1 >= 0 and y2 >= 0:
             x1 = math.sqrt(y1)
-            x2 = -math.sqrt(y1)
+            x2 = -x1
             x3 = math.sqrt(y2)
-            x4 = -math.sqrt(y2)
+            x4 = -x2
             print(f"x1 = {x1}")
             print(f"x2 = {x2}")
             print(f"x3 = {x3}")
             print(f"x4 = {x4}")
         elif y1 >= 0:
             x1 = math.sqrt(y1)
-            x2 = -math.sqrt(y1)
+            x2 = -x1
             print(f"x1 = {x1}")
             print(f"x2 = {x2}")
         elif y2 >= 0:
             x1 = math.sqrt(y2)
-            x2 = -math.sqrt(y2)
+            x2 = -x1
             print(f"x1 = {x1}")
             print(f"x2 = {x2}")
         else:
