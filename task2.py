@@ -14,11 +14,11 @@ if __name__ == '__main__':
 
  #Делаем замену в уравнении x^2 = y и решаем относительно у
 
-    D = b * b - 4 * a * c
+    d = b * b - 4 * a * c
 
-    if D < 0:
+    if d < 0:
         print("Действительных корней нет")
-    elif D == 0:
+    elif d == 0:
         y = -b / (2 * a)
         if y < 0:
             print("Действительных корней нет")
@@ -28,8 +28,8 @@ if __name__ == '__main__':
             print(f"x1 = {x1}")
             print(f"x2 = {x2}")
     else:
-        y1 = (-b + math.sqrt(D)) / (2 * a)
-        y2 = (-b - math.sqrt(D)) / (2 * a)
+        y1 = (-b + math.sqrt(d)) / (2 * a)
+        y2 = (-b - math.sqrt(d)) / (2 * a)
 
         if y1 >= 0 and y2 >= 0:
             x1 = math.sqrt(y1)
